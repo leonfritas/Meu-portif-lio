@@ -1,0 +1,267 @@
+body {
+  background-color: darkcyan;
+  min-height: 90vh;
+  position: relative;
+  background-image: url(../images/fogo.png);
+}
+
+.setaesquerda img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    animation: vaievolta 0.6s infinite alternate ease-in-out;
+    display: none;
+}
+
+.setaesquerda.ativo img{
+    display: block;
+    
+}
+
+@-webkit-keyframes vaievolta{
+    0%{
+        -webkit-transform: translateX(0);
+        
+    }
+
+    100%{
+        -webkit-transform: translateX(0.4em);
+    }
+}
+
+
+
+header {
+  text-align: center;
+  margin: 50px;
+  color: white;
+}
+
+header .menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 15px;
+  
+}
+
+header .menu li {
+  color:white;
+}
+header .menu li {
+  border-bottom: 1px solid black;
+}
+
+header .menu li:hover {
+  border-bottom: 1px solid darkcyan;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+/* Sobre */
+
+section.sobre .container {
+  width: 800px;
+  
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background: rgb(53, 59, 59);
+  padding: 50px;
+  position: relative;
+  box-shadow: 1px 1px 10px 1px #000;
+  margin-top: 30px;
+  display: none;
+}
+
+section.sobre .container .conteudo {
+  width: 400px;
+  color: #fff;
+}
+
+section.sobre .container .conteudo h2{
+    margin-bottom: 20px;
+    
+}
+
+section.sobre .container img {
+  position: absolute;
+  right: 100px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+section.sobre.mostrar .container {
+    display: flex;
+}
+
+
+
+/* Skills */
+
+section.skills .container{
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(53, 59, 59);
+    color: #fff;
+    display: none;
+    
+}
+
+section.skills .container .tecnologias{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    
+}
+
+section.skills .container .tecnologias img{
+    animation: cimaebaixo 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes cimaebaixo{
+    0%{
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+      
+        transform: rotate(360deg);
+    }
+
+    0%, 7% {
+        transform: rotateZ(0);
+      }
+      15% {
+        transform: rotateZ(-15deg);
+      }
+      20% {
+        transform: rotateZ(10deg);
+      }
+      25% {
+        transform: rotateZ(-10deg);
+      }
+      30% {
+        transform: rotateZ(6deg);
+      }
+      35% {
+        transform: rotateZ(-4deg);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+      }
+    
+    }
+
+
+section.skills .container .tecnologias img{
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+}
+
+section.skills .container p{
+    font-weight: 300;
+    margin: auto 20px; 
+
+}
+
+section.skills.mostrar .container {
+    display: block;
+}
+
+
+/* Projetos */
+
+section.projetos .container{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    display: none;
+}
+
+section.projetos .container .projeto img{
+    width: 250px;
+    border-radius: 10px;
+    
+}
+
+section.projetos .container .projeto:hover{
+    opacity: 0.6;
+    
+}
+
+
+section.projetos .container .projeto p{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.projetos.mostrar .container {
+    display: flex;
+}
+
+/* Contato */
+
+section.contato .container{
+    border-radius: 10px;
+    width: 800px;
+    padding: 20px;
+    display: none;
+    color: white;
+    background-color: rgb(53, 59, 59);;
+    
+    
+
+}
+
+section.contato .container .conteudo{
+    margin: 10px;
+}
+
+section.contato .container .conteudo ul{
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+section.contato .container .redes{
+    text-align: center;
+    margin: 80px auto;
+    
+}
+
+section.contato .container .redes a{
+    color: white;
+    font-size: 30px;
+    margin: 15px;
+}
+
+section.contato .container .redes a:hover{
+    color: darkcyan;
+}
+
+section.contato.mostrar .container {
+    display: block;
+}
+
