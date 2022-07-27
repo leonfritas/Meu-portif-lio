@@ -8,14 +8,14 @@ console.log(menu)
 console.log(sobre)
 console.log(skills)
 
-sobre.addEventListener("click", function(){
+sobre.addEventListener("click", () => {
     menu[0].classList.add("mostrar")
     menu[1].classList.remove("mostrar")
     menu[2].classList.remove("mostrar")
     menu[3].classList.remove("mostrar")
 })
 
-skills.addEventListener("click", function () {
+skills.addEventListener("click", () => {
     menu[0].classList.remove("mostrar")
     menu[1].classList.add("mostrar")
     menu[2].classList.remove("mostrar")
@@ -23,7 +23,7 @@ skills.addEventListener("click", function () {
 })
 
 
-projetos.addEventListener("click", function(){
+projetos.addEventListener("click", () => {
     menu[2].classList.add("mostrar")
     menu[0].classList.remove("mostrar")
     menu[1].classList.remove("mostrar")
@@ -31,7 +31,7 @@ projetos.addEventListener("click", function(){
 
 })
 
-contato.addEventListener("click", function(){
+contato.addEventListener("click", () => {
     menu[3].classList.add("mostrar")
     menu[0].classList.remove("mostrar")
     menu[1].classList.remove("mostrar")

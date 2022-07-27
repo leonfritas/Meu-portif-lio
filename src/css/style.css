@@ -1,42 +1,21 @@
 body {
-  background-color: darkcyan;
+  background-color: #000;
   min-height: 90vh;
   position: relative;
   background-image: url(../images/fogo.png);
 }
 
-.setaesquerda img{
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    animation: vaievolta 0.6s infinite alternate ease-in-out;
-    display: none;
+:root{
+  --cor-padrao: #fff;
+  --tamanho-do-texto: 15px; 
+  --peso-do-texto: 300;
 }
-
-.setaesquerda.ativo img{
-    display: block;
-    
-}
-
-@-webkit-keyframes vaievolta{
-    0%{
-        -webkit-transform: translateX(0);
-        
-    }
-
-    100%{
-        -webkit-transform: translateX(0.4em);
-    }
-}
-
 
 
 header {
   text-align: center;
   margin: 50px;
-  color: white;
+  color: var(--cor-padrao);
 }
 
 header .menu {
@@ -47,8 +26,8 @@ header .menu {
   
 }
 
-header .menu li {
-  color:white;
+header .menu a {
+  color: var(--cor-padrao);
 }
 header .menu li {
   border-bottom: 1px solid black;
@@ -63,11 +42,12 @@ section {
   justify-content: center;
 }
 
+
+
 /* Sobre */
 
 section.sobre .container {
   width: 800px;
-  
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -75,13 +55,14 @@ section.sobre .container {
   padding: 50px;
   position: relative;
   box-shadow: 1px 1px 10px 1px #000;
-  margin-top: 30px;
+  margin-top: 0px;
   display: none;
+  animation: debaixoparacima 0.5s;
 }
 
 section.sobre .container .conteudo {
   width: 400px;
-  color: #fff;
+  color: var(--cor-padrao);
 }
 
 section.sobre .container .conteudo h2{
@@ -89,11 +70,22 @@ section.sobre .container .conteudo h2{
     
 }
 
+section.sobre .container .conteudo p{
+  font-weight: var(--peso-do-texto);
+  font-size: var(--tamanho-do-texto);
+}
+
 section.sobre .container img {
   position: absolute;
   right: 100px;
   width: 200px;
   border-radius: 50%;
+}
+
+section.sobre .container img:hover {
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+  transition: 0.3s  ease-in-out ;
 }
 
 section.sobre.mostrar .container {
@@ -109,9 +101,27 @@ section.skills .container{
     padding: 20px;
     border-radius: 10px;
     background: rgb(53, 59, 59);
-    color: #fff;
     display: none;
+    animation: debaixoparacima 0.5s ;
     
+}
+
+@-webkit-keyframes debaixoparacima {
+  0%{
+    transform: translateY(100px);
+    opacity: 0.1;
+  }
+
+  50%{
+    transform: translateY(-25px);
+    
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 }
 
 section.skills .container .tecnologias{
@@ -126,25 +136,7 @@ section.skills .container .tecnologias img{
 }
 
 @-webkit-keyframes cimaebaixo{
-    0%{
-        transform: translateY(0);
-    }
-
-    25%{
-        transform: rotate(90deg);
-    }
-
-    50%{
-        transform: rotate(180deg);
-    }
-    75%{
-        transform: rotate(270deg);
-    }
-
-    100%{
-      
-        transform: rotate(360deg);
-    }
+    
 
     0%, 7% {
         transform: rotateZ(0);
@@ -178,15 +170,16 @@ section.skills .container .tecnologias img{
 }
 
 section.skills .container p{
-    font-weight: 300;
+    font-weight: var(--peso-do-texto);
     margin: auto 20px; 
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-do-texto);
 
 }
 
 section.skills.mostrar .container {
     display: block;
 }
-
 
 /* Projetos */
 
@@ -197,6 +190,7 @@ section.projetos .container{
     gap: 50px;
     margin-top: 50px;
     display: none;
+    animation: debaixoparacima 0.5s ;
 }
 
 section.projetos .container .projeto img{
@@ -212,7 +206,7 @@ section.projetos .container .projeto:hover{
 
 
 section.projetos .container .projeto p{
-    color: white;
+    color: var(--cor-padrao);
     font-weight: 600;
     text-align: center;
 }
@@ -228,11 +222,12 @@ section.contato .container{
     width: 800px;
     padding: 20px;
     display: none;
-    color: white;
-    background-color: rgb(53, 59, 59);;
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-do-texto);
+    font-weight: var(--peso-do-texto);
+    background-color: rgb(53, 59, 59);
+    animation: debaixoparacima 0.5s;
     
-    
-
 }
 
 section.contato .container .conteudo{
@@ -247,18 +242,18 @@ section.contato .container .conteudo ul{
 
 section.contato .container .redes{
     text-align: center;
-    margin: 80px auto;
     
 }
 
 section.contato .container .redes a{
-    color: white;
+    color: var(--cor-padrao);
     font-size: 30px;
     margin: 15px;
 }
 
 section.contato .container .redes a:hover{
     color: darkcyan;
+    
 }
 
 section.contato.mostrar .container {
