@@ -1,0 +1,68 @@
+@media (max-width: 500px){
+
+    /* Sobre */
+    section.sobre .container{
+        width: 80%;
+        flex-direction: column;
+        
+        
+    }
+    section.sobre .container .conteudo {
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 30px;
+
+    }
+
+    section.sobre .container img {
+        position: static;
+        margin: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    /* Skills */
+
+    section.skills .container{
+        width: 80%;
+    }
+
+    section.skills .container .tecnologias{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    section.skills .container .tecnologias img{
+        width: 50px;
+        height: 50px;
+    }
+
+    section.skills .container p{
+        text-align: justify;
+    }
+    
+    /* Projetos */
+
+    section.projetos .container{
+        flex-wrap: wrap;
+    }
+
+    /* Contato */
+
+    section.contato .container{
+        width: 80%;
+    }
+
+    section.contato .container .conteudo ul{
+        display: block;
+    }
+
+    section.contato .container .conteudo{
+        text-align: justify;
+    }
+
+    section.contato .container .redes a{
+        font-size: 25px;
+    }
+}
