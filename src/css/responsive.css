@@ -67,6 +67,13 @@
     }
 
     section.contato .container .redes a{
-        font-size: 25px;
+        font-size: 35px;
+        
+    }
+
+    section.contato .container .redes{
+        display: flex;
+        justify-content: center;
+        
     }
 }
