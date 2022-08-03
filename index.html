@@ -34,7 +34,8 @@
             <div class="conteudo">
                 <h2>Um pouco sobre mim</h2>
                 <p>Meu nome é Leonardo, tenho 27 anos, sou natural de Manaus - Am, gosto muito de cinema, video-game,
-                    futebol, e sou músico nas horas vagas. Sempre estive muito ligado a tecnologia e hoje me vejo cada dia
+                    futebol, e sou músico nas horas vagas. Sempre estive muito ligado a tecnologia e hoje me vejo cada
+                    dia
                     mais apaixonado pela área da programação. Estou em busca de conseguir minha primeira vaga como
                     desenvolvedor front-end. </p>
             </div>
@@ -53,11 +54,14 @@
                 <img src="src/images/github.png" alt="logo github">
             </div>
             <p>Já
-                utilizo tecnologias HTML, CSS e Javascript,  consigo me comunicar muito bem em inglês, tenho algumas noções em design, prezo pelo código limpo e pelas boas práticas de programação, estou iniciando os estudos em React.js e no futuro pretendo aprender também outras linguagens.
-                Além disso me considero uma pessoa extremamente fácil de conviver, bastante esforçado e disposto a ajudar e aprender, além de sempre      priorizar o respeito e harmonia entre todos
-                no ambiente de trabalho. 
-                
-                
+                utilizo tecnologias HTML, CSS e Javascript, consigo me comunicar muito bem em inglês, tenho algumas
+                noções em design, prezo pelo código limpo e pelas boas práticas de programação, estou iniciando os
+                estudos em React.js e no futuro pretendo aprender também outras linguagens.
+                Além disso me considero uma pessoa extremamente fácil de conviver, bastante esforçado e disposto a
+                ajudar e aprender, além de sempre priorizar o respeito e harmonia entre todos
+                no ambiente de trabalho.
+
+
             </p>
         </div>
     </section>
@@ -78,18 +82,37 @@
                 <p>NFT card</p>
             </a>
 
-            
+
         </div>
     </section>
 
     <section class="item contato">
         <div class="container">
             <div class="conteudo">
-                <p>Para entrar em contato comigo basta escolher uma das opções abaixo, estou disponível para realizar entrevistas de emprego e testes técnicos. Procuro por trabalho presencial ou home office.</p>
+                <div class="texto-form">
+                    <p>Para entrar em contato comigo basta escolher uma das opções abaixo, ou enviar uma mensagem pelo formulário ao lado, estou disponível para
+                        realizar entrevistas de emprego e testes técnicos. Procuro por trabalho presencial ou home
+                        office.</p>
+
+                    <form action="https://api.staticforms.xyz/submit" method="post" >
+                        <input type="hidden" name="accessKey" value="f7efcd1b-74e6-4f02-9537-eb34bcdb98f5">
+                        
+
+                        <label for="inputNome" name="name">Nome:</label>
+                        <input type="text" id="inputNome" name="name" placeholder="Digite seu nome" required>
+                        <label for="inputEmail">Email:</label>
+                        <input type="text" id="inputEmail" name="email" placeholder="Digite seu e-mail para contato" required>
+                        <label for="textAreaMensagem">Mensagem:</label>
+                        <textarea name="message" id="textAreaMensagem" cols="10" rows="2" placeholder="Digite aqui sua mensagem"
+                            required></textarea>
+                        <input id="btn" class="btn" type="submit" value="Enviar">
+                    </form>
+                    
+                </div>
+                <img id="luva" class="luva" src="src/images/luva.gif" alt="">
                 <ul>
                     <li>Email: leonardodevfront@gmail.com</li>
                     <li>Tel: (92) 99410-7470</li>
-
                 </ul>
             </div>
             <div class="redes">
@@ -106,7 +129,7 @@
     </section>
 
 
-
+    <script src="src/js/gifbotaoenviar.js"></script>
     <script src="https://kit.fontawesome.com/e6e3158deb.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="src/js/index.js"></script>
 </body>

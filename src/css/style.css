@@ -80,6 +80,7 @@ section.sobre .container img {
   right: 100px;
   width: 200px;
   border-radius: 50%;
+  
 }
 
 section.sobre .container img:hover {
@@ -254,6 +255,43 @@ section.contato .container .redes a{
 section.contato .container .redes a:hover{
     color: darkcyan;
     
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+ 
+}
+
+.texto-form{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.texto-form p{
+  width:50%;
+  text-align: justify;
+}
+input, textarea{
+  outline: 0;
+}
+.btn{
+  cursor: pointer;
+  width: 100px;
+  margin: 5px auto;
+}
+
+.luva{
+  width: 200px;
+  display: none;
+  margin: 0 auto;
+  
+}
+.luva.mostrargif{
+  display: block;
 }
 
 section.contato.mostrar .container {

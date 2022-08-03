@@ -76,4 +76,13 @@
         justify-content: center;
         
     }
+
+    .texto-form{
+        display: block;
+        
+    }
+    .texto-form p,
+    .texto-form form{
+        width: 100%;
+    }
 }
