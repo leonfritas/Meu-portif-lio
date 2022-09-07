@@ -284,16 +284,6 @@ input, textarea{
   margin: 5px auto;
 }
 
-.luva{
-  width: 200px;
-  display: none;
-  margin: 0 auto;
-  
-}
-.luva.mostrargif{
-  display: block;
-}
-
 section.contato.mostrar .container {
     display: block;
 }

@@ -4,9 +4,7 @@ const skills = document.getElementById("skillsbtn")
 const projetos = document.getElementById("projetosbtn")
 const contato = document.getElementById("contatobtn")
 
-console.log(menu)
-console.log(sobre)
-console.log(skills)
+
 
 sobre.addEventListener("click", () => {
     menu[0].classList.add("mostrar")
