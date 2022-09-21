@@ -50,6 +50,16 @@
 
     section.projetos .container{
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.projetos .container .projeto img{
+        width: 300px;
+
+    }
+
+    section.projetos .container .projeto p{
+        font-size: 15px;
     }
 
     /* Contato */

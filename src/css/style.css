@@ -187,15 +187,17 @@ section.skills.mostrar .container {
 section.projetos .container{
     width: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 50px;
     margin-top: 50px;
     display: none;
     animation: debaixoparacima 0.5s ;
+    margin-bottom: 50px;
 }
 
 section.projetos .container .projeto img{
-    width: 250px;
+    width: 600px;
     border-radius: 10px;
     
 }
@@ -209,6 +211,7 @@ section.projetos .container .projeto:hover{
 section.projetos .container .projeto p{
     color: var(--cor-padrao);
     font-weight: 600;
+    font-size: 20px;
     text-align: center;
 }
 
