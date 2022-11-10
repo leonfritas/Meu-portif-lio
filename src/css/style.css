@@ -73,6 +73,7 @@ section.sobre .container .conteudo h2{
 section.sobre .container .conteudo p{
   font-weight: var(--peso-do-texto);
   font-size: var(--tamanho-do-texto);
+  text-align: justify;
 }
 
 section.sobre .container img {
@@ -175,6 +176,7 @@ section.skills .container p{
     margin: auto 20px; 
     color: var(--cor-padrao);
     font-size: var(--tamanho-do-texto);
+    text-align: justify;
 
 }
 
