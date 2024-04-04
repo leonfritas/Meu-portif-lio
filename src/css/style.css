@@ -3,6 +3,7 @@ body {
   min-height: 90vh;
   position: relative;
   background-image: url(../images/fogo.png);
+  padding-bottom: 20px;
 }
 
 :root{
@@ -130,6 +131,7 @@ section.skills .container .tecnologias{
     display: flex;
     justify-content: space-around;
     margin: 20px;
+    flex-wrap: wrap;
     
 }
 
@@ -171,6 +173,10 @@ section.skills .container .tecnologias img{
     margin: 15px;
 }
 
+section.skills .container h3{
+color: #f2f2f2;
+}
+
 section.skills .container p{
     font-weight: var(--peso-do-texto);
     margin: auto 20px; 
@@ -201,6 +207,8 @@ section.projetos .container{
 section.projetos .container .projeto img{
     width: 600px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0.2px solid #b1b1b1;
     
 }
 
