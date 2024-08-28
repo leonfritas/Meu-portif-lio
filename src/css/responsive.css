@@ -24,6 +24,22 @@
         left: 0;
     }
 
+    .btnMoreLan{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }    
+
+    .divLanguage{
+        position: static;
+    }
+
     /* Skills */
 
     section.skills .container{

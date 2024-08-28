@@ -17,6 +17,8 @@ header {
   text-align: center;
   margin: 50px;
   color: var(--cor-padrao);
+  position: relative;
+
 }
 
 header .menu {
@@ -41,6 +43,19 @@ header .menu li:hover {
 section {
   display: flex;
   justify-content: center;
+}
+
+.divLanguage{
+ position: absolute;
+ right: 0;
+ top: 0;
+
+}
+
+.divLanguage img{
+  width: 30px;
+  cursor: pointer;
+
 }
 
 
@@ -199,7 +214,6 @@ section.projetos .container{
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    margin-top: 50px;
     display: none;
     animation: debaixoparacima 0.5s ;
     margin-bottom: 50px;

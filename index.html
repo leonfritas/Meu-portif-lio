@@ -12,34 +12,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="./src/css/language.css" rel="stylesheet">
 
 </head>
 
 <body>
 
     <header>
-        <h1>Bem-vindo ao meu portfólio</h1>
-        <div>
+        <h1 class="pt">Bem-vindo ao meu portfólio</h1>
+        <h1 class="en">Welcome to my portfolio</h1>
+        <div class="btnMoreLan">
             <ul class="menu">
-                <li><a id="sobrebtn" href="#">Sobre</a></li>
-                <li><a id="skillsbtn" href="#">Skills</a></li>
-                <li><a id="projetosbtn" href="#">Projetos</a></li>
-                <li><a id="contatobtn" href="#">Contato</a></li>
+                <li class="pt sobrebtn"><a href="#">Sobre</a></li>
+                <li class="pt skillsbtn"><a href="#">Skills</a></li>
+                <li class="pt projetosbtn"><a href="#">Projetos</a></li>
+                <li class="pt contatobtn"><a href="#">Contato</a></li>
+
+                <li class="en sobrebtn"><a href="#">About</a></li>
+                <li class="en skillsbtn"><a href="#">Skills</a></li>
+                <li class="en projetosbtn"><a href="#">Projects</a></li>
+                <li class="en contatobtn"><a href="#">Contact</a></li>
             </ul>
+            <div class="divLanguage">
+                <img id="buttonPT" src="./src/images/brasil.png" alt="language-pt">
+                <img id="buttonEN" src="./src/images/eua.png" alt="language-en">
+            </div>
         </div>
+
+
     </header>
 
-    <section class="item sobre mostrar">
+    <section class="item sobre">
         <div class="container">
             <div class="conteudo">
-                <h2>Um pouco sobre mim</h2>
-                <p>Olá, meu nome é Leonardo, tenho 29 anos, sempre estive muito ligado a tecnologia e hoje me vejo cada
-                    dia
-                    mais fascinado pelo desenvolvimento de software. Trabalho na área a dois anos e estou em busca de novas oportunidades.
-                    <br>
-                    <br>
-                    <br>
-                    - "O que não te desafia, não te transforma". 
+                <h2 class="pt">Um pouco sobre mim</h2>
+                <h2 class="en">A little about me</h2>
+                <p class="pt">Olá, meu nome é Leonardo, tenho 29 anos, sempre estive muito ligado a tecnologia e hoje me vejo cada
+                dia
+                mais fascinado pelo desenvolvimento de software. Trabalho na área a dois anos e estou em busca de novas oportunidades.
+                </p>
+                <p class="en">Hello, my name is Leonardo, I'm 29 years old, I've always been very connected to technology and today I see myself every
+                    day
+                    more fascinated by software development. I have been working in the area for two years and am looking for new opportunities.
+                </p>
+                <br>
+                <br>
+                <br>                
+                <p class="pt">- "O que não te desafia, não te transforma". </p>                          
+                <p class="en">- "What doesn't challenge you, doesn't transform you". </p>  
             </div>
             <img src="src/images/foto.png" alt="foto leo" class="foto">
         </div>
@@ -60,60 +80,69 @@
             </div>
             <br>
             <br>
-            <h3>Experiência:</h3>
+            <h3 class="pt">Experiência:</h3> 
+            <h3 class="en">Experience:</h3>
+            <br>                       
+            <p class="pt">Tenho experiência sólida em React.js, Node.js, SQL, CSS, HTML, principalmente no ecossistema React.js para desenvolvimento web.</p>  
+            <p class="en">I have solid experience in React.js, Node.js, SQL, CSS, HTML, mainly in the React.js ecosystem for web development.</p>             
+            <br>        
+            <h3 class="pt">Trabalho Diário:</h3>
+            <h3 class="en">Daily Work:</h3> 
+            <br>           
+            <p class="pt">Atualmente estou trabalhando como desenvolvedor desktop utilizando Delphi e banco de dados SQL, meu trabalho consiste em dar suporte, criar novas funcionalidades e corrigir bugs em 3 tipos de sistemas diversos, para Universidades, Escolas e Hospitais.</p>           
+            <p class="en">I am currently working as a desktop developer using Delphi and SQL database, my work consists of providing support, creating new features and fixing bugs in 3 different types of systems, for Universities, Schools and Hospitals.</p>        
             <br>
-            <p>Tenho experiência sólida em React.js, Node.js, SQL, CSS, HTML, principalmente no ecossistema React.js para desenvolvimento web.</p>
-            <br>
-            <h3>Trabalho Diário:</h3>
-            <br>
-            <p>Atualmente estou trabalhando como desenvolvedor desktop utilizando Delphi e banco de dados SQL, meu trabalho consiste em dar suporte, criar novas funcionalidades e corrigir bugs em 3 tipos de sistemas diversos, para Universidades, Escolas e Hospitais.</p>
-            <br>
-            <h3>Contato e Familiaridade:</h3>
-            <br>
-            <p>Durante meus períodos de trabalho e estudo já tive contato com TypeScript, JAVA, PHP e banco de dados PostGreSQL.</p>
+            <h3 class="pt">Contato e Familiaridade:</h3> 
+            <h3 class="en">Contact and Familiarity:</h3>  
+            <br>           
+            <p class="pt">Durante meus períodos de trabalho e estudo já tive contato com TypeScript, JAVA, PHP e banco de dados PostGreSQL.</p>
+            <p class="en">During my periods of work and study I have already had contact with TypeScript, JAVA, PHP and PostGreSQL database.</p>
 
-
-            
         </div>
     </section>
 
 
-    <section class="item projetos">
+    <section class="item projetos mostrar">
         <div class="container">
 
-            <a class="projeto projetoApp" href="#" target="_blank">
+            <a class="projeto projetoApp" href="https://github.com/leonfritas/app-restaurante" target="_blank">
                 <img src="src/images/gifApp.gif" alt="gif programador">                
-                <h2>Aplicativo para restaurante</h2> 
+                <h2 class="pt">Aplicativo para restaurante</h2> 
+                <h2 class="en">Restaurant app</h2>
                 <p>( React.js | Node.js | CSS | MySQL | AWS) </p>              
             </a> 
 
-            <a class="projeto" href="#" target="_blank">
+            <a class="projeto" href="https://github.com/leonfritas/Sistema-Restaurante" target="_blank">
                 <img src="src/images/Hest-Desktop.gif" alt="gif programador">                
-                <h2>Sistema para restaurante</h2> 
+                <h2 class="pt">Sistema para restaurante</h2> 
+                <h2 class="en">Restaurant system</h2> 
                 <p>( Delphi | MySQL | AWS ) </p>               
             </a> 
 
             <a class="projeto" href="https://pim-unip-2yxnmptx1-leonardo-ribeiros-projects-3424fe72.vercel.app" target="_blank">
                 <img src="src/images/gifPim.gif" alt="gif programador">                
-                <h2>Site para HortiFruti</h2>
+                <h2 class="pt">Site para HortiFruti</h2>
+                <h2 class="en">Website for HortiFruti</h2>
                 <p>( React.js | Node.js | CSS | MySQL | AWS) </p>                
             </a>            
 
             <a class="projeto" href="https://leonfritas.github.io/Landing-Page-Conduta-Zero-92/" target="_blank">
                 <img src="src/images/siteConduta.gif" alt="gif programador">
-                <h2>Landing Page Conduta Zero 92</h2>
+                <h2>Landing Page Conduta Zero 92</h2>                
                 <p>( Javascript | CSS | HTML) </p>
             </a>
             
             <a class="projeto" href="https://leonfritas.github.io/Consumindo-API-GitHub/" target="_blank">
                 <img src="src/images/github.gif" alt="gif programador">
-                <h2>Consumindo API do GitHub</h2>
+                <h2 class="pt">Consumindo API do GitHub</h2>
+                <h2 class="en">Consuming API from GitHub</h2>
                 <p>( Javascript | CSS | HTML) </p>
             </a>
             
             <a class="projeto" href="https://leonfritas.github.io/Project-API-Movies/" target="_blank">
                 <img src="src/images/movie.gif" alt="gif programador">
-                <h2>Consumindo API pública de filmes.</h2>
+                <h2 class="pt">Consumindo API pública de filmes.</h2>
+                <h2 class="en">Consuming public movie API.</h2>
                 <p>( Javascript | CSS | HTML) </p>
             </a>
 
@@ -137,12 +166,11 @@
             <div class="conteudo">
                 <div class="texto-form">
                     <br>
-                         <br>
-                    <p>Para entrar em contato comigo basta escolher uma das opções.
-                        
-                         </p>
-                         <br>
-                         <br>
+                    <br>
+                    <p class="pt">Para entrar em contato comigo basta escolher uma das opções.</p>
+                    <p class="en">To contact me, simply choose one of the options.</p>
+                    <br>
+                    <br>
                     <form action="https://api.staticforms.xyz/submit" method="post" >
                         <input type="hidden" name="accessKey" value="f7efcd1b-74e6-4f02-9537-eb34bcdb98f5">
                         <input type="hidden" name="redirectTo" value="https://leonfritas.github.io/Meu-portif-lio/">
